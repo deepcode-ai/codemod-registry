@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"module": "NodeNext",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES6",
+		"allowJs": true
+	},
+	"exclude": ["node_modules", "./dist/**/*"],
+	"ts-node": {
+		"transpileOnly": true
+	}
+}

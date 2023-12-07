@@ -1,0 +1,37 @@
+{
+	"name": "@codemod-registry/monorepo",
+	"type": "module",
+	"author": "Intuita",
+	"packageManager": "pnpm@8.9.0",
+	"scripts": {
+		"build": "turbo run build --no-daemon",
+		"build:homedir": "turbo run build:homedir --no-daemon",
+		"build:cjs": "turbo run build:cjs --no-daemon",
+		"create": "turbo run create",
+		"lint:eslint": "eslint --fix .",
+		"lint:prettier": "prettier --write .",
+		"test": "turbo run test --no-daemon",
+		"test:ci": "turbo run test --no-daemon --concurrency=1"
+	},
+	"devDependencies": {
+		"@types/node": "20.10.4",
+		"@typescript-eslint/eslint-plugin": "^6.2.0",
+		"@typescript-eslint/parser": "^6.2.0",
+		"eslint": "^8.45.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-no-only-tests": "^3.1.0",
+		"eslint-plugin-prettier": "^5.0.0",
+		"eslint-plugin-react": "^7.33.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0",
+		"prettier": "^3.1.0",
+		"ts-node": "10.9.1",
+		"turbo": "1.11.0",
+		"typescript": "5.3.3"
+	},
+	"dependencies": {
+		"@codemod-registry/intuita-migrate-codemod-registry": "workspace:^",
+		"@codemod-registry/utilities": "workspace:^",
+		"builder:build": "link:@codemod-registry/builder:build"
+	}
+}

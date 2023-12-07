@@ -1,0 +1,10 @@
+build
+node_modules
+.vscode
+.DS_Store
+.pnp
+.pnp.js
+dist
+*.pem
+.turbo
+
